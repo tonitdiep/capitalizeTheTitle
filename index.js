@@ -10,5 +10,19 @@ Return the capitalized title.
  * @return {string}
  */
 var capitalizeTitle = function(title) {
+      //first lowercase all letters in the title input
+    let firstWord = title.toLowerCase().split(' ')
+    // let wordOutcome = [];
 
+
+    for (let i = 0; i < firstWord.length; i++){
+            
+        if (firstWord[i].length > 2){
+            firstWord[i] = firstWord[i][0].toUpperCase() + firstWord[i].slice(1);
+                   console.log('test', firstWord)
+        }
+    }
+        
+    return firstWord.join(' ');
+    //return capitalized title
 };
